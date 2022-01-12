@@ -23,3 +23,5 @@ fields:
 - type: file
   name: img
   label: img
+pages:
+- my_collections/_treatments/עיגולים-עיגולים.md
