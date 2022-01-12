@@ -10,7 +10,7 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: _treatments
+  path: my_collections/_treatments
   label: Treatments
   create: all
   match: "**/*"
