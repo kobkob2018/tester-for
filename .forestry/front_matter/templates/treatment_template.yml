@@ -1,4 +1,54 @@
 ---
 label: treatment_template
 hide_body: false
-fields: []
+fields:
+- name: name
+  type: text
+  config:
+    required: false
+  label: name
+  hidden: false
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: permalink
+- name: title
+  type: text
+  config:
+    required: false
+  label: title
+- name: description
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: description
+- name: time
+  type: number
+  label: time
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+- name: price
+  type: number
+  description: ''
+  default: 0
+  required: true
+  config:
+    min: 
+    max: 
+    step: 
+  label: price
+- name: img
+  type: file
+  config:
+    maxSize: 64
+  label: img
