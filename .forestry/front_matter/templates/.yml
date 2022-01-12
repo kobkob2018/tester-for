@@ -1,0 +1,25 @@
+---
+label: טיפול
+hide_body: false
+fields:
+- type: text
+  name: name
+  label: name
+- type: text
+  name: permalink
+  label: permalink
+- type: text
+  name: title
+  label: title
+- type: text
+  name: description
+  label: description
+- type: number
+  name: time
+  label: time
+- type: number
+  name: price_not
+  label: price_not
+- type: file
+  name: img
+  label: img
