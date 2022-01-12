@@ -1,0 +1,12 @@
+<div class="inner-section home-treatments">
+    <h2>
+        הטיפולים שלי
+    </h2>
+    <div class="treatments items">
+        {% for treatment in site.treatments %}
+        
+            <a class="treatment item grow" href="{{treatment.permalink}}" title="{{treatment.title}}">{{treatment.title}}</a>
+        
+        {% endfor %}
+    </div>
+</div>

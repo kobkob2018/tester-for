@@ -1,0 +1,12 @@
+<div class="top-menu wide-only">
+    <ul class="nav-menu menu-ul">
+        {% for link in site.data.main_menu %}
+        <li class="main-cat">
+            <a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a>
+        </li>
+        {% endfor %}
+        <li class="main-cat contact-me">
+            <a href="javascript://" onclick="openContactModal()" title="צור קשר">צרו קשר</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,100 @@
+/**
+ * Reset some basic elements
+ */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
+
+.clear{
+  height: 0.1px;
+  background: none;
+  clear: both;
+}
+/**
+ * Basic styling
+ */
+body {
+  direction: rtl;
+  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  color: $text-color;
+  background: linear-gradient(-45deg, #bd9d60c4, transparent);
+}
+h1{
+  font-size: 1.6em;
+}
+
+h2{
+  font-size: 1.8em;
+  border-bottom: 1px solid #bd9d60;
+  display: inline-block;
+  color: #bd9d60;
+  margin: 20px auto;
+  padding: 5px 0px;
+}
+
+h3{
+    font-size: 1.2em;
+}
+
+/**
+ * Images
+ */
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+
+/**
+ * Lists
+ */
+ul, ol {
+  margin-left: $spacing-unit;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
+}
+
+.clear{
+  clear: both;
+}
+
+/**
+ * Links
+ */
+a {
+  color: $brand-color;
+  text-decoration: none;
+
+  &:visited {
+    color: darken($brand-color, 15%);
+  }
+
+  &:hover {
+    color: $text-color;
+    text-decoration: underline;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  .mobile-only{
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .wide-only{
+    display: none !important;
+  }
+}
+
+.wide-only{
+  
+}

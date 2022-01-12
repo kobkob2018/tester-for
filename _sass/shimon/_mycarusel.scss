@@ -1,0 +1,48 @@
+.mycarusel{
+    .items{
+        padding: 10px;
+        position: relative;
+        min-height: 200px;
+        box-sizing: border-box;
+        .item{
+            position: absolute;
+            width: 100%;
+            text-align: center;
+            top:0;
+            left: 0;
+            transition: 1s;
+
+            &.carusel-on{
+                display: block;
+                opacity: 1;
+                
+                
+            }
+            &.carusel-off{
+                display: none;
+                opacity: 0;
+                
+            }
+            &.carusel-coming{
+                opacity: 0;
+                display: block;
+                left:-30px;
+            }
+            &.carusel-removing{
+                opacity: 0;
+                left:30px;
+                
+                
+            }
+            &.carusel-coming-prev{
+                opacity: 0;
+                display: block;
+                left:30px;
+            }
+            &.carusel-removing-prev{
+                opacity: 0;
+                left:-30px;
+            }            
+        }
+    }
+}

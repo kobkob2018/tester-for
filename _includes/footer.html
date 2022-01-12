@@ -1,0 +1,36 @@
+<footer class="site-footer h-card">
+  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+
+  <div class="wrapper">
+    <div class="footer-heading">
+
+      <h3 >{{ site.title | escape }}</h3>
+      <p class="footer-phone">{{ site.phone | escape }} </p>
+      <p class="footer-address">{{ site.address | escape }}</p>
+    </div>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="treatment-list">
+          {% for link in site.data.main_menu %}
+          {% if forloop.index == 4 or forloop.index == 7 %}
+          </ul>
+          <ul class="treatment-list">
+            
+          {% endif %}
+          <li class="main-cat item">
+              <a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a>
+          </li>
+          
+          {% endfor %}
+          <li class="main-cat item contact-me">
+              <a href="javascript://" onclick="openContactModal(); closeDrawer('side_nav');" title="צור קשר">צרו קשר</a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>

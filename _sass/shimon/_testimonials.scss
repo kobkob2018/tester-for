@@ -1,0 +1,58 @@
+
+.testimonials-carusel{
+    
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    .carusel-control{
+        position: absolute;
+        top: 100px;
+        z-index: 1;
+        font-size: 30px;
+        color: #bd9d60;
+        &.next{
+            left:auto;
+            right:0px;
+        }
+        &.previous{
+            right: auto;
+            left: 0px;
+        }
+    }
+    .items{
+        width: 100%;
+        height: 250px;
+        .item{
+            text-align: center;
+            .item-content{
+
+                
+                padding: 20px;
+                width: 80%;
+                margin: 30px auto;
+                height: 130px;
+                justify-content: center;
+                display: flex;
+                flex-direction: column;
+                .fa-quote-right,.fa-quote-left{
+                    color: #bd9d60;
+                    position: relative;
+                    top: -5px;
+                    left: 5px;
+                    
+                }
+                .fa-quote-left{
+                    top: 8px;
+                    left:-5px;
+                }
+                .item-name{
+                    color: #bd9d60;
+                    font-weight: bold;
+                    
+                    margin-top: 25px;
+                }
+            }
+           
+        }
+    }
+}

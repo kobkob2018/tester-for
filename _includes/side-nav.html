@@ -1,0 +1,16 @@
+<div id="side_nav_drawer_overlay"  class="drawer-overlay" onclick="closeDrawer('side_nav')"></div>
+<div id="side_nav_wrap" class="side-nav-wrap side-drawer-wrap">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeDrawer('side_nav')">&times;</a>
+    <div class="side-nav side-drawer">
+        <ul class="nav-menu nav-ul">
+            {% for link in site.data.main_menu %}
+            <li class="main-cat item">
+                <a href="{{link.url}}" title="{{link.title}}">{{link.title}}</a>
+            </li>
+            {% endfor %}
+            <li class="main-cat item contact-me">
+                <a href="javascript://" onclick="openContactModal(); closeDrawer('side_nav');" title="צור קשר">צרו קשר</a>
+            </li>
+        </ul>
+    </div>
+  </div>

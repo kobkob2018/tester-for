@@ -1,0 +1,33 @@
+{% include side-nav.html %}
+{% include accessibility.html %}
+<div class="header">
+  
+  <div class="top-nav-wrap navScroll">
+    <div class="top-nav">
+    {% include top-menu.html %}
+    <div class="side-buttons right-side-buttons">
+      <a class="mobile-only" href="javascript://" onclick="openDrawer('side_nav')"><i class="fa fa-navicon"></i></a>
+    </div>
+    <div class="side-buttons left-side-buttons">
+      <a href="javascript://" onclick="openDrawer('accessibility')"><i class="fa fa-wheelchair-alt"></i></a>
+    </div>
+    </div>
+  </div>
+  <div class="logo-wrap slidedown-logo-nav navScroll">
+    <div class="logo">
+      <a href="{{ site.baseurl}}/" title="{{ site.data.home.main_title }}">
+        <img class="logo-img" src="assets/images/site-logo.png" />
+      </a>
+    </div>
+  </div>
+  <div class="header-banner-wrap">
+    <img src="assets/images/ban1.jpeg"/>
+  </div>
+  <div class="logo-wrap   navInBody">
+    <div class="logo slidedown-on-view">
+      <a href="{{ site.baseurl}}/" title="{{ site.data.home.main_title }}">
+        <img class="logo-img" src="assets/images/site-logo.png" />
+      </a>
+    </div>
+  </div>
+</div>

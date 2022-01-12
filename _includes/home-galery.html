@@ -1,0 +1,75 @@
+<div class="inner-section gallery-wrap">
+
+    <div class="gallery">
+        <div class="gallery-title">
+            <h2 class="gallery-title">איזה אתר יפה</h2>
+            <h3 class="second-title">מדברים דיבורים</h3>
+            <h4>משנת 2005</h4>
+        </div>
+        <div class="gallery-items">
+            {% for img in site.data.home-gallery %}
+                {% if img.title %}
+                    {% assign img_title = img.title %}
+                {% else %}
+                    {% assign img_title = site.title %}
+                {% endif %}
+                {% if img.thumb %}
+                    {% assign img_thumb = 'thumbs/' | append: img.thumb %}
+                {% else %}
+                    {% assign img_thumb = img.src %}
+                {% endif %}
+                <div class="gallery-item">
+                    
+                    <a href="javascript://" class="modal-gallery-a" data-gallery_id = "gallery_modal_1" data-img_index = "{{forloop.index}}">
+                        <img src="assets/images/home-gallery/{{img_thumb}}" img="{{img_title}}" />
+                    </a>
+                </div>
+            {% endfor %}
+        </div>
+
+    </div>
+</div>
+
+<div id="gallery_modal_1" class="gallery-modal">
+    
+    <div class="gallery-carusel-wrap">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeDrawer('accessibility')">&times;</a>
+        <div class="gallery-carusel">
+
+            <div class="mycarusel gallery-carusel">
+                <div class="carusel-control next">
+                <i class="fa carusel-next fa-chevron-right"></i>
+            </div>
+            <div class="carusel-control previous">
+                
+                <i class="fa carusel-previous fa-chevron-left"></i>
+            </div>
+            <div class="modal-gallery items">
+                
+                {% for img in site.data.home-gallery %}
+                {% if img.title %}
+                {% assign img_title = img.title %}
+                {% else %}
+                {% assign img_title = site.title %}
+                {% endif %}
+                <div class="gallery-item item item_id_{{forloop.index}}">
+                    <div class="item-content">
+                        {% if img.title %}
+                        <div class="item-text">
+                            <h2>
+                                {{ img.title }}
+                            </h2>
+                        </div>
+                        {% endif %}                        
+                        <div class="item-img">
+                            <img src="assets/images/home-gallery/{{ img.img }}" alt="{{ img_title }}" />
+                        </div>
+
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</div>
+</div>

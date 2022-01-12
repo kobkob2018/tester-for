@@ -1,0 +1,13 @@
+---
+permalink: contact-card
+---
+BEGIN:VCARD
+VERSION:3.0
+FN:{{ site.contact_name }} - {{ site.title }}
+N:;{{ site.contact_name }} - {{ site.title }};;;
+item1.EMAIL;TYPE=INTERNET:{{ site.email }}
+item1.X-ABLabel:
+item2.TEL:{{ site.phone }}
+item2.X-ABLabel:
+CATEGORIES:myContacts
+END:VCARD

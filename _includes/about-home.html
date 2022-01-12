@@ -1,0 +1,19 @@
+{% for about_text in site.about %}
+<div class="inner-section about-me-home">
+  <div class="about-me-img">
+    <img src="assets/images/{{ about_text.img }}" alt="{{site.title}}" />
+  </div>
+  
+  {% if about_text.img %}
+  <div class="about-me-content slideup-on-view">
+    <h3 class="about-me-title">{{ about_text.title }}</h3>
+   
+    {% endif %}
+    <div class="about-me-text">
+      
+      <p>{{  about_text.content | markdownify }}</p>
+    </div>
+  </div>
+</div>
+<div class="clear"></div>
+{% endfor %}

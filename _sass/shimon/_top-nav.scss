@@ -1,0 +1,94 @@
+.top-nav-wrap{
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 100;
+    background: white;
+    box-shadow: 6px 3px 15px gray;
+    .top-nav{
+        position: relative;
+        max-width: 1170px;
+        margin: auto;
+    }
+    .side-buttons{
+        position: absolute;
+        top:12px;
+        right:30px;
+        &.left-side-buttons{
+            right:auto;
+            left: 30px;
+        }
+        font-size: 33px;
+
+        a{
+            color: #7c6332;
+            margin-left: 10px;
+        }
+        @media screen and (min-width: 780px) and (max-width: 900px){
+            top: 247px;
+            right: -7px;
+            background: #f5deb3;
+            padding-right: 20px;
+            border-radius: 5px;
+            padding-top: 4px;
+            border: 2px solid;
+            z-index: 125;
+            a{
+                color: black;
+            }
+        }
+    }
+    .top-menu{
+        display: flex;
+        justify-content:center;
+    }
+    ul.nav-menu{
+        list-style: none;
+        display: flex;
+        li{
+            a{
+                display: block;
+                color: #362a13;
+                text-decoration: none;
+                font-size: 1.1em;
+                padding: 0px 8px;
+                margin: 18px 0px;
+                font-family: monospace,  sans-serif, serif;
+                border-left: 1px solid #bd9d60;
+                &:hover{
+                    text-decoration: none;
+                    color: #bd9d60;
+                }
+            }
+            &:last-child{
+                a{
+                    border-left:none ;
+                }
+            }
+        }
+
+    }
+    &.scrolled{
+        height: 111px;
+        .logo img{
+            box-shadow: 3px 3px 5px #b5b5b5;
+            border-radius: 60%;
+            padding: 3px;
+            border: 1px solid #cdcdcd;
+            background: linear-gradient(0deg, #d9c9c9, white);
+        }
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .top-nav-wrap{
+        min-height: 77px;
+        
+        &.scrolled{
+            background: linear-gradient(0deg, #e2e2e2, white);
+        }
+    }
+
+}

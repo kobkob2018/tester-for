@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body class="body {{ page.layout }}">
+
+    {%- include header.html -%}
+
+    <div class="main-content page-section" aria-label="Content">
+      <div class="section-content">
+
+        
+        {{ content }}
+      </div>
+    </div>
+    <div class="before-footer">
+      
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/he_IL/sdk.js#xfbml=1&version=v12.0&appId=374144012621766&autoLogAppEvents=1" nonce="8UL76WXe"></script>
+        
+        <div class="fb-like" data-href="{{site.url}}{{site.baseurl}}{{page.url}}" data-width="" data-layout="button" data-action="like" data-size="small" data-share="true"></div>
+    </div>
+    {%- include footer.html -%}
+    
+    {% include contact-modal.html %}
+    <script type="text/javascript">
+        const cookie_prefix = "{{ site.cookie_prefix }}";
+    </script>
+    {% if site.data.local_env %}
+      {% include asset_mainjs_tag.html %}
+  
+    {% else %}
+      <script type="text/javascript" src="{{site.baseurl}}/assets/min/mainjs_a4.js"></script>
+      
+    {% endif %}
+
+
+    <div id="modals_placeholder"></div>
+
+  </body>
+
+</html>

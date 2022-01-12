@@ -1,0 +1,32 @@
+{% if page.meta_title %}
+  {% assign meta_title = page.meta_title %}
+{% else %}
+  {% assign meta_title = site.data.home.meta_title %}
+{% endif %}
+
+{% if page.meta_keywords %}
+  {% assign keywords = page.meta_keywords %}
+{% else %}
+  {% assign keywords = site.data.global.keywords %}
+{% endif %}
+
+{% if page.meta_description %}
+  {% assign description = page.meta_description %}
+{% else %}
+  {% assign description = site.data.global.description %}
+{% endif %}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <title>{{ meta_title }}</title>
+  <meta name="viewport"
+  content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0, minimal-ui"/>
+  <meta name="keywords" content="{{ keywords | join: ', ' }}"/>
+  <meta name="description" content="{{ description }}"/>
+  {% if page.noindex or (site.data.global.noindex and site.data.global.noindex == 'yes' %}
+  <meta name="robots" content="noindex, nofollow" />
+  {% endif %}
+  <meta property="og:image" content="https://shimon-clinic.co.il/assets/images/home-gallery/thumbs/ban1.jpeg" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{ site.baseurl}}/assets/main.css">
+</head>
