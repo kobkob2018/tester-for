@@ -25,3 +25,5 @@ fields:
   config:
     required: false
   label: galeryname
+pages:
+- _about/gallerygood.md
