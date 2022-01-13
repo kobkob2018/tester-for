@@ -1,8 +1,9 @@
+---
+- title: עיגול
+  url: circle
 - title: משולשים
   url: triangle
-
 - title: ריבועים
   url: square
-
 - title: תפריט הצורות המלא
-  url: treatment-menu  
+  url: treatment-menu
