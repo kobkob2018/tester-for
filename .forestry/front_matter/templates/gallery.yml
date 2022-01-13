@@ -1,4 +1,11 @@
 ---
 label: gallery
 hide_body: true
-fields: []
+fields:
+- name: gallery_list
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: גלריית תמונות
