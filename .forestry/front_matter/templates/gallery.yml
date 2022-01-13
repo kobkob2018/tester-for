@@ -9,3 +9,5 @@ fields:
     min: 
     max: 
   label: גלריית תמונות
+pages:
+- _about/galleries/jogle.md
