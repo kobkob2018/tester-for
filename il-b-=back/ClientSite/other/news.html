@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=Windows-1255" />
+		<title>Sample</title>
+		
+		<script type="text/javascript" src="scripts/xmlDom.js"></script>
+		<script>
+		var newsXslDom = null;
+		var newsXmlDom = null;
+		
+		var URL_GET_DATA = "create_xml.php";
+		window.onload=function(){
+			loadNews();
+		}
+		
+		function loadNews(){
+			try {
+			
+			newsXslDom = getXmlDom();
+			onloadDocument(newsXslDom,getNews);
+			
+			newsXslDom.load("template.xslt");
+			
+			} catch (e) {
+				alert("Error in loadNews:"+e.description);	
+			}
+		}
+		
+		function getNews(){
+			if (IE){
+				if (newsXslDom.readyState != 4) return;
+			}
+			newsXmlDom = getXmlDom();
+			onloadDocument(newsXmlDom,drawNews);
+			newsXmlDom.load(URL_GET_DATA+"?unk=03030303&table=articels&limit=3");
+			
+			//setNodeText( newsXslDom,"//xsl:variable/@select","'view1'");
+			setNodeText( newsXslDom,"//xsl:variable/@select","'view2'");
+			/*setNodeText( newsXslDom,"//xsl:variable/@select","'view1'");*/
+			
+		}
+		
+		function drawNews(){
+			if (IE){
+				if (newsXmlDom.readyState != 4) return;
+			}
+			
+			var container = document.getElementById("container");
+			if (IE) {
+				container.innerHTML =  transform(newsXmlDom,newsXslDom);
+			} else {
+				container.appendChild(transform(newsXmlDom,newsXslDom));
+			}
+		}
+		
+		</script>
+		<style>
+			.MainTable{ width: 450px;}
+			.newsHeader{background-color:#afb7da;color:white;font-family:verdana;font-size:12;}
+			.news{font-family:verdana;font-size:10}
+			.spacer{height:30px;}
+			
+			.MainTable2{ width: 550px;}
+			.newsHeader2{ text-align:right; color:#000;font-family:verdana;font-size:12;}
+			.news2{text-align:right; font-family:verdana;font-size:12}
+		</style>
+	</head>
+	<body>
+		<center>
+			<div id="container" dir="rtl" ></div>
+		</center>
+	</body>
+</html>

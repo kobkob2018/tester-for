@@ -1,0 +1,14 @@
+#<Files index.php>
+# SecFilterEngine Off
+#</Files>
+#AuthGroupFile /dev/null
+#AuthUserFile /home/ilan123/domains/ilbiz.co.il/.htpasswd/public_html/ClientSite/administration/.htpasswd
+#AuthName "Go away"
+#ErrorDocument 401 "Unauthorized Access"
+AuthGroupFile /dev/null
+AuthType Basic
+AuthUserFile /home/ilan123/domains/ilbiz.co.il/.htpasswd/public_html/site-admin/.htpasswd
+AuthName "admin"
+require valid-user
+ErrorDocument 401 "Unauthorized Access"
+

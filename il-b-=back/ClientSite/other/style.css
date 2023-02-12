@@ -1,0 +1,92 @@
+		
+		.test{}
+		
+		
+		BODY	{
+			BACKGROUND-COLOR: #ffffff;
+		}
+		
+		.maintext	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+		}
+
+		.maintext a:link {text-decoration:underline;color:#000000;}
+		.maintext a:active{text-decoration:underline;color:navy;}
+		.maintext a:visited{text-decoration:underline;color:#000000;}
+		.maintext a:hover{text-decoration:underline;color:navy}
+		
+		.maintextBold	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		
+		.headline	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 13px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.input_style	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+			border-bottom: 1px solid #666666;
+			border-top: 1px solid #666666;
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			/**background-color: #eaeaea;*/
+			background-color: #ffffff;
+			width: 300px;
+			height: 19px;
+		}
+		
+		.textarea_style	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+			border-bottom: 1px solid #666666;
+			border-top: 1px solid #666666;
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			background-color: #ffffff;
+			width: 450px;
+			height: 250px;
+		}
+		
+		.textarea_style_summary	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+			border-bottom: 1px solid #666666;
+			border-top: 1px solid #666666;
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			background-color: #ffffff;
+			width: 450px;
+			height: 100px;
+		}
+		
+		.submit_style	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+			border-bottom: 1px solid #666666;
+			border-top: 1px solid #666666;
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			background-color: #ffffff;
+			width: 100px;
+			height: 19px;
+		}

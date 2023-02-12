@@ -1,0 +1,82 @@
+#page_wrap{}
+#content_wrap{background:#f7f7f7; padding:10px; border:1px solid gray;}
+#affiliate-login{border:red 1px solid;padding:5px;float:left;}
+#affiliate-login a{text-decoration:underline; padding:5px;}
+#affiliate-login::after{clear:both;}
+.form-group input,.form-group textarea,.form-group select{font-size: 17px;width: 180px; max-width:100%; line-height: 17px; height: 31px; box-sizing: border-box;}
+.datepicker {
+   float: right
+}
+.datepicker.dropdown-menu {
+   right:auto
+}
+label.error{color:red;}
+label.error::before{content:"*";}
+
+.table-striped>tbody>tr:nth-child(odd)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+    background-color: #fbfba0;
+}
+.table-striped>tbody>tr:nth-child(even)>td, .table-striped>tbody>tr:nth-child(odd)>th {
+    /* background-color: #f9f9f9; */
+}
+.beck-link{float: left; font-weight: bold; font-size: 16px;}
+#responsive-tables .suming-tr{color:red;}
+#estimateSiteHeightDiv .aftersend_link{display:none;}
+@media only screen and (max-width: 800px) {
+    
+    /* Force table to not be like tables anymore */
+	#responsive-tables table, 
+	#responsive-tables thead, 
+	#responsive-tables tbody, 
+	#responsive-tables th, 
+	#responsive-tables td, 
+	#responsive-tables tr { 
+		display: block; 
+	}
+ 
+	/* Hide table headers (but not display: none;, for accessibility) */
+	#responsive-tables thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+ 
+	#responsive-tables tr { border: 1px solid #ccc; }
+ 
+	#responsive-tables td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-right: 50%; 
+		white-space: normal;
+		text-align:right;
+	}
+ 
+	#responsive-tables td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		right: 6px;
+		width: 45%; 
+		padding-left: 10px; 
+		white-space: nowrap;
+		text-align:right;
+		font-weight: bold;
+	}
+ 
+	#responsive-tables td.responsive-full-row{
+		padding-right: 0%;
+		direction: ltr;
+		text-align: center;
+	}
+	#responsive-tables td.responsive-hide{
+		display:none;
+	}
+	/*
+	Label the data
+	*/
+	#responsive-tables td:before { content: attr(data-title); }
+}
+

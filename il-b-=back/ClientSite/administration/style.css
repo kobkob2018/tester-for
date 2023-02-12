@@ -1,0 +1,146 @@
+BODY	{
+			BACKGROUND-COLOR: #F3F4F2;
+		}
+		
+		.right_headline	{
+			color: #343434;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+		
+		.right_menu	{
+			color: #6b6b6b;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+		}
+		
+		.right_menu a:link {text-decoration:none;color:#6b6b6b;}
+		.right_menu a:active{text-decoration:underline;color:#000000;}
+		.right_menu a:visited{text-decoration:none;color:#6b6b6b;}
+		.right_menu a:hover{text-decoration:underline;color:#000000;}
+		
+		.right_menu_tat	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+		}
+		
+		.right_menu_tat a:link {text-decoration:none;color:#000000;}
+		.right_menu_tat a:active{text-decoration:underline;color:#000000;}
+		.right_menu_tat a:visited{text-decoration:none;color:#000000;}
+		.right_menu_tat a:hover{text-decoration:underline;color:#000000;}
+		
+		.maintext	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 13px;
+			text-decoration: none;
+		}
+
+		.maintext a:link {text-decoration:underline;color:#000000;}
+		.maintext a:active{text-decoration:underline;color:#000000;}
+		.maintext a:visited{text-decoration:underline;color:#000000;}
+		.maintext a:hover{text-decoration:underline;color:#000000;}
+		
+		.maintextBold	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: underline;
+			font-weight: bold;
+		}
+		
+		
+		
+		
+		.maintext_small	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 10px;
+			text-decoration: none;
+		}
+
+		.maintext_small a:link {text-decoration:underline;color:#000000;}
+		.maintext_small a:active{text-decoration:underline;color:#000000;}
+		.maintext_small a:visited{text-decoration:underline;color:#000000;}
+		.maintext_small a:hover{text-decoration:underline;color:#000000;}
+		
+		.headline	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 13px;
+			text-decoration: none;
+			font-weight: bold;
+		}
+
+		.input_style	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+			border-bottom: 1px solid #666666;
+			border-top: 1px solid #666666;
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			/**background-color: #eaeaea;*/
+			background-color: #ffffff;
+			width: 300px;
+			height: 19px;
+		}
+		
+		.textarea_style	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+			border-bottom: 1px solid #666666;
+			border-top: 1px solid #666666;
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			background-color: #ffffff;
+			width: 450px;
+			height: 250px;
+		}
+		
+		.textarea_style_summary	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+			border-bottom: 1px solid #666666;
+			border-top: 1px solid #666666;
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			background-color: #ffffff;
+			width: 450px;
+			height: 100px;
+		}
+		
+		.submit_style	{
+			color: #000000;
+			font-family: sans-serif;
+			font-size: 12px;
+			text-decoration: none;
+			border-bottom: 1px solid #666666;
+			border-top: 1px solid #666666;
+			border-right: 1px solid #666666;
+			border-left: 1px solid #666666;
+			background-color: #ffffff;
+			width: 100px;
+			height: 19px;
+		}
+		
+		
+		/* first page */
+		
+		.messagesHeadline{
+			color: #343434;
+			font-family: sans-serif;
+			font-size: 16px;
+			text-decoration: none;
+			font-weight: bold;
+		}
